@@ -6,6 +6,7 @@ import { geistMono } from "../../../lib/utils";
 import { Navbar } from "../Navbar";
 import { useAtom } from "jotai";
 import { sidebarAtom } from "../../../store/Atom";
+import { Breadcrumb } from "../Fragments/Breadcrumb";
 
 export const Layouts = ({ children }: { children: React.ReactNode }) => {
 	const [foldSidebar] = useAtom(sidebarAtom);
@@ -48,7 +49,10 @@ export const Layouts = ({ children }: { children: React.ReactNode }) => {
 				</div>
 				<div className="flex-grow overflow-y-auto overflow-x-hidden">
 					<Navbar />
-					<div className="bg-zinc-950 h-screen mb-96 rounded-3xl p-5 mt-10">{children}</div>
+
+					<Breadcrumb />
+
+					<div className="bg-zinc-950 rounded-3xl p-5 mt-1">{children}</div>
 				</div>
 			</div>
 		</>
