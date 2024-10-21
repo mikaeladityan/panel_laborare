@@ -10,7 +10,7 @@ export const Breadcrumb = () => {
 	return (
 		<div className="ms-5 mt-5">
 			<ul className="text-xs font-bold tracking-wide flex items-center gap-2 justify-start text-zinc-300">
-				<li>Home</li>
+				<li>...</li>
 				{pathNames.map((name, index) => (
 					<React.Fragment key={index}>
 						{index < pathNames.length && (
