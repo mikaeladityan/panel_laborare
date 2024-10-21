@@ -7,4 +7,9 @@ export const geistMono = localFont({
 	weight: "100 900",
 });
 
-export const jakartaSans = Plus_Jakarta_Sans({ display: "swap", subsets: ["latin"] });
+export const jakartaSans = Plus_Jakarta_Sans({
+	display: "swap",
+	subsets: ["latin"],
+});
+
+export const BACKEND = process.env.NEXT_PUBLIC_BACKEND;
